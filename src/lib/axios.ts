@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:8000/api";
+const BASE_URL = "https://event-management-be-nine.vercel.app/api";
 
 // Create a custom axios instance with default configuration
 const axiosInstance = axios.create({

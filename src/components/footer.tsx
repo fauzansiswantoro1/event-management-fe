@@ -1,25 +1,25 @@
-import Link from "next/link"
-import { Calendar, Mail, Facebook, Twitter, Instagram } from "lucide-react"
+import Link from "next/link";
+import { Calendar, Mail, Facebook, Twitter, Instagram } from "lucide-react";
 
 export default function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const quickLinks = [
     { href: "/home", label: "Home" },
     { href: "/events", label: "Browse Events" },
     { href: "/about", label: "About Us" },
-  ]
+  ];
 
   const legalLinks = [
     { href: "/terms", label: "Terms" },
     { href: "/privacy", label: "Privacy" },
-  ]
+  ];
 
   const socialLinks = [
     { href: "https://facebook.com", label: "Facebook", icon: Facebook },
     { href: "https://twitter.com", label: "Twitter", icon: Twitter },
     { href: "https://instagram.com", label: "Instagram", icon: Instagram },
-  ]
+  ];
 
   return (
     <footer className="bg-gray-900 text-white">
@@ -33,7 +33,9 @@ export default function Footer() {
                 <Calendar className="h-6 w-6 text-indigo-400" />
                 <span className="ml-2 text-lg font-bold">Eventin</span>
               </div>
-              <p className="text-gray-400 text-sm mb-4">Discover and organize amazing events in your community.</p>
+              <p className="text-gray-400 text-sm mb-4">
+                Discover and organize amazing events in your community.
+              </p>
 
               <div className="flex items-center text-sm text-gray-400 mb-4">
                 <Mail className="h-4 w-4 mr-2" />
@@ -43,7 +45,7 @@ export default function Footer() {
               {/* Social Links */}
               <div className="flex space-x-3">
                 {socialLinks.map((social) => {
-                  const IconComponent = social.icon
+                  const IconComponent = social.icon;
                   return (
                     <Link
                       key={social.label}
@@ -55,7 +57,7 @@ export default function Footer() {
                     >
                       <IconComponent className="h-4 w-4" />
                     </Link>
-                  )
+                  );
                 })}
               </div>
             </div>
@@ -66,7 +68,10 @@ export default function Footer() {
               <ul className="space-y-2 text-gray-400 text-sm">
                 {quickLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="hover:text-white transition-colors">
+                    <Link
+                      href={link.href}
+                      className="hover:text-white transition-colors"
+                    >
                       {link.label}
                     </Link>
                   </li>
@@ -77,17 +82,9 @@ export default function Footer() {
             {/* Newsletter */}
             <div className="md:col-span-1">
               <h3 className="text-base font-semibold mb-3">Stay Updated</h3>
-              <p className="text-gray-400 text-sm mb-3">Get notified about new events and features.</p>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-3 py-2 text-sm bg-gray-800 border border-gray-700 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-                />
-                <button className="px-4 py-2 text-sm bg-indigo-600 hover:bg-indigo-700 rounded-r-md transition-colors">
-                  Subscribe
-                </button>
-              </div>
+              <p className="text-gray-400 text-sm mb-3">
+                Get notified about new events and features.
+              </p>
             </div>
           </div>
         </div>
@@ -95,7 +92,9 @@ export default function Footer() {
         {/* Bottom Footer */}
         <div className="border-t border-gray-800 py-4">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
-            <p className="text-gray-400 text-sm">&copy; {currentYear} Eventin. All rights reserved.</p>
+            <p className="text-gray-400 text-sm">
+              &copy; {currentYear} Eventin. All rights reserved.
+            </p>
 
             <div className="flex space-x-4">
               {legalLinks.map((link) => (
@@ -112,5 +111,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

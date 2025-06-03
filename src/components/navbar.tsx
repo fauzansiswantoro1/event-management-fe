@@ -11,7 +11,7 @@ export default async function Navbar() {
 
   const navigationItems = [
     { href: "/", label: "Home" },
-    { href: "/blog", label: "Blog" },
+    { href: "/events", label: "Events" },
     { href: "/about", label: "About" },
   ];
 
