@@ -11,7 +11,7 @@ export default async function Navbar() {
 
   const navigationItems = [
     { href: "/", label: "Home" },
-    { href: "/events", label: "Events" },
+    { href: "#events", label: "Events" },
     { href: "/about", label: "About" },
   ];
 
@@ -50,7 +50,7 @@ export default async function Navbar() {
             {data ? (
               <div className="flex items-center gap-3">
                 <span className="text-sm font-medium text-gray-700">
-                  {data.user.email}
+                  {data.user.name}
                 </span>
                 <Logout />
               </div>

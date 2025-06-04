@@ -18,7 +18,7 @@ interface NavigationItem {
 interface MobileMenuProps {
   navigationItems: NavigationItem[];
   user?: {
-    email: string;
+    name: string;
   };
 }
 
@@ -77,7 +77,7 @@ export default function MobileMenu({ navigationItems, user }: MobileMenuProps) {
               <div className="flex flex-col space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-medium text-gray-700">
-                    {user.email}
+                    {user.name}
                   </span>
                   <Logout />
                 </div>

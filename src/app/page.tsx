@@ -50,7 +50,7 @@ const mockEvents = [
     location: "San Francisco, CA",
     category: "Technology",
     price: 299,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/tech-event.jpg",
     attendees: 1250,
     rating: 4.8,
     organizer: "TechEvents Inc.",
@@ -67,7 +67,7 @@ const mockEvents = [
     location: "Austin, TX",
     category: "Music",
     price: 150,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/party-image.jpg",
     attendees: 5000,
     rating: 4.9,
     organizer: "Music Events Co.",
@@ -84,7 +84,7 @@ const mockEvents = [
     location: "New York, NY",
     category: "Food",
     price: 75,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/food-event.jpg",
     attendees: 800,
     rating: 4.7,
     organizer: "Culinary Events",
@@ -101,7 +101,7 @@ const mockEvents = [
     location: "Seattle, WA",
     category: "Business",
     price: 50,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/startup-event.png",
     attendees: 300,
     rating: 4.6,
     organizer: "Startup Hub",
@@ -118,7 +118,7 @@ const mockEvents = [
     location: "Los Angeles, CA",
     category: "Art",
     price: 25,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/art-event.png",
     attendees: 200,
     rating: 4.5,
     organizer: "Modern Art Gallery",
@@ -135,7 +135,7 @@ const mockEvents = [
     location: "Boston, MA",
     category: "Sports",
     price: 100,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/marathon-event.JPG",
     attendees: 2500,
     rating: 4.8,
     organizer: "Boston Athletic Association",
@@ -152,7 +152,7 @@ const mockEvents = [
     location: "Chicago, IL",
     category: "Business",
     price: 199,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/digital-event.jpg",
     attendees: 600,
     rating: 4.7,
     organizer: "Marketing Pro Events",
@@ -169,7 +169,7 @@ const mockEvents = [
     location: "New Orleans, LA",
     category: "Music",
     price: 85,
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/jazz-event.jpeg",
     attendees: 150,
     rating: 4.9,
     organizer: "Jazz Club NOLA",
@@ -452,7 +452,7 @@ export default function EventinLanding() {
       </section>
 
       {/* Events Grid */}
-      <section className="py-12">
+      <section id="events" className="py-12">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
             <h3 className="text-2xl font-bold text-gray-900">
